@@ -4,9 +4,19 @@ import { useCallback, useEffect, useRef, useState } from "react";
 
 // Deterministic 2D integer hash -> uint32
 function hash2d(ix, iy) {
+  // Convert to string to preserve negative coordinates uniquely
+  const key = `${ix},${iy}`;
   let h = 0x811C9DC5; // FNV offset basis
-  h = Math.imul(h ^ (ix | 0), 0x01000193);
-  h = Math.imul(h ^ (iy | 0), 0x01000193);
+  
+  // Hash the string representation
+  for (let i = 0; i < key.length; i++) {
+    h = Math.imul(h ^ key.charCodeAt(i), 0x01000193);
+  }
+  
+  // Additional mixing based on the actual coordinates
+  h = Math.imul(h ^ ix, 0x01000193);
+  h = Math.imul(h ^ iy, 0x01000193);
+  
   // final avalanche
   h ^= h >>> 16;
   h = Math.imul(h, 0x7FEB352D);
