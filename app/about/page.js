@@ -54,14 +54,14 @@ export default function About() {
 
         <div style={{ fontSize: '16px', marginBottom: '30px' }}>
           <p style={{ marginBottom: '20px' }}>
-            Inspired by Jorge Luis Borges' "The Library of Babel" and{' '}
+            Inspired by Jorge Luis Borges&apos; &quot;The Library of Babel&quot; and{' '}
             <a 
               href="https://www.canvasofbabel.com/" 
               target="_blank" 
               rel="noopener noreferrer"
               style={{ color: '#fff', textDecoration: 'underline' }}
             >
-              Will Depue's original CanvasofBabel.com
+              Will Depue&apos;s original CanvasofBabel.com
             </a>, 
             The Canvas of Babel v2 extends this concept to real distribution from diffusion models.
           </p>
@@ -77,7 +77,7 @@ export default function About() {
           </p>
 
           <p style={{ marginBottom: '20px' }}>
-            By using a diffusion model (FLUX.1), we sample from the actual distribution of "possible images" 
+            By using a diffusion model (FLUX.1), we sample from the actual distribution of &quot;possible images&quot; 
             rather than pure randomness. Each coordinate still maps to a unique, deterministic image through 
             its seed, but now these images exist within the learned manifold of visual meaning.
           </p>
@@ -89,7 +89,7 @@ export default function About() {
           <p style={{ marginBottom: '20px' }}>
             Every position (x, y) on this infinite canvas corresponds to a unique image. The same coordinate 
             will always show the same image, creating a stable, explorable universe of visual possibilities. 
-            You're not just viewing random images—you're navigating a deterministic space where every image 
+            You&apos;re not just viewing random images—you&apos;re navigating a deterministic space where every image 
             has always existed at its specific location, waiting to be discovered.
           </p>
 
@@ -111,8 +111,8 @@ export default function About() {
           </p>
 
           <p style={{ marginTop: '40px', fontStyle: 'italic', opacity: 0.8 }}>
-            "The universe (which others call the Canvas) is composed of an indefinite, perhaps infinite, 
-            number of hexagonal galleries..."
+            &quot;The universe (which others call the Canvas) is composed of an indefinite, perhaps infinite, 
+            number of hexagonal galleries...&quot;
           </p>
         </div>
       </div>
